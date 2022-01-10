@@ -1,0 +1,34 @@
+.tasksContainer{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.tasks {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.addInput{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.addButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.enterTaskLabel{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

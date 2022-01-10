@@ -1,0 +1,32 @@
+.task {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.id {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    margin-left: 15%;
+    margin-right: auto;
+    hight:30px;
+    vertical-align:top;
+
+}
+.description {
+    display: inline-block;
+    width: 30%;
+    hight:30px;
+    margin-left: 50px;
+    margin-right: auto;
+    word-wrap: break-word;
+    vertical-align:top;
+}
+.deleteButton {
+    border: 0;
+    background: black;
+    color: white;
+    width: 5%;
+    vertical-align:top;
+
+}
