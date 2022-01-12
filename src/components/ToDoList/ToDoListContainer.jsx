@@ -1,12 +1,12 @@
 import React from "react";
 import ToDoList from "./ToDoList";
-import {addNewTask, deleteTask, typingTask} from "../../redux/to-do-list-reducer";
+import {addNewTask, deleteTask, typingTask, updateTask, updatingTask} from "../../redux/to-do-list-reducer";
 import {compose} from "redux";
 import {connect} from "react-redux";
 
 
 let mapStateToProps = (state) => {
-    return { tasks: state.doList.tasks, taskCandidate: state.doList.taskCandidate};
+    return { tasks: state.doList.tasks, taskCandidate: state.doList.taskCandidate, taskForUpdate: state.doList.taskForUpdate};
 };
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -19,6 +19,12 @@ let mapDispatchToProps = (dispatch) => {
         },
         deleteTask: (id) => {
             dispatch(deleteTask(id))
+        },
+        updateTask: (id, description) => {
+            dispatch(updateTask(id,description))
+        },
+        updatingTask: (id, description) => {
+            dispatch(updatingTask(id,description))
         }
     };
 };
