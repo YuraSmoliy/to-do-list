@@ -1,6 +1,6 @@
 import React from "react";
 import ToDoList from "./ToDoList";
-import {addNewTask, deleteTask, typingTask, updateTask, updatingTask} from "../../redux/to-do-list-reducer";
+import {addNewTask, deleteTask, typingTask, updateTask, modifyTask} from "../../redux/to-do-list-reducer";
 import {compose} from "redux";
 import {connect} from "react-redux";
 
@@ -24,7 +24,7 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(updateTask(id,description))
         },
         updatingTask: (id, description) => {
-            dispatch(updatingTask(id,description))
+            dispatch(modifyTask(id,description))
         }
     };
 };
